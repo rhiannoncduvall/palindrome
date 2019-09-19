@@ -1,5 +1,35 @@
-<!-- place to type in a word -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palindrome</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+<body>
+    <h1 id="page-title">Is it a Palindrome?</h1>
+        <p id="definition">pal·in·drome<br>
+                <em class="pronounce">/ˈpalənˌdrōm/</em><br>
+                <b>noun</b><br>
+                a word, phrase, or sequence that reads the same backward as forward.
+        </p>Type any word here:<br>
+            <input id="submitted-text" type="text" name="word" value="racecar" onsubmit="isPalindrome()"><br>
+            <button type="submit" onclick="isPalindrome()">Submit</button>
 
-<!-- check to see if the word contains numbers, capitals, etc -->
 
-<!-- list words entered and whether or not they are palindromes -->
+    <h2>Palindromes:</h2>
+        <ul id="palindrome-list">
+            <li>racecar</li>
+        </ul>
+    <h2>Not Palindromes:</h2>
+        <ul id="not-palindrome-list">
+            <li>test</li>
+        </ul>
+    <script type="text/javascript" src="index.js">
+        let userInput = document.getElementById("submitted-text").value;
+
+    </script>
+</body>
+</html>
