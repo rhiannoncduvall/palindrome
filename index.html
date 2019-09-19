@@ -6,30 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Palindrome</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    
+    <script async type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <h1 id="page-title">Is it a Palindrome?</h1>
-        <p id="definition">pal·in·drome<br>
-                <em class="pronounce">/ˈpalənˌdrōm/</em><br>
-                <b>noun</b><br>
-                a word, phrase, or sequence that reads the same backward as forward.
-        </p>Type any word here:<br>
-            <input id="submitted-text" type="text" name="word" value="racecar" onsubmit="isPalindrome()"><br>
-            <button type="submit" onclick="isPalindrome()">Submit</button>
 
+    <div class="wrapper">
+        <div class="title-text">
+            <h1 id="page-title">Is it a Palindrome?</h1>
+                <p id="definition">pal·in·drome<br>
+                    <em class="pronounce">/ˈpalənˌdrōm/</em><br>
+                    <b>noun</b><br>
+                    a word, phrase, or sequence that reads the same backward as forward.
+                </p>
+        </div>
+        <div class="main-form">
+            <p id="form1">
+                Type any word here:<br>
+                <input id="submitted-text" type="text" name="word"><br>
+                <button onclick="isPalindrome()">Submit</button>
+            </p>
+        </div>
+        <div class="lists">
+            <div class="list1">
+                <h2 class="list-name isPal">Palindromes:</h2>
+                    <ul id="palindrome-list">
+                        <li>racecar</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+            </div>
+            <div class="list2">
+                <h2 class="list-name notPal">Not Palindromes:</h2>
+                    <ul id="not-palindrome-list">
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+            </div>
+        </div>
 
-    <h2>Palindromes:</h2>
-        <ul id="palindrome-list">
-            <li>racecar</li>
-        </ul>
-    <h2>Not Palindromes:</h2>
-        <ul id="not-palindrome-list">
-            <li>test</li>
-        </ul>
-    <script type="text/javascript" src="index.js">
-        let userInput = document.getElementById("submitted-text").value;
+        <div class="footer">
+            Find out more about palindromes <a href="https://en.wikipedia.org/wiki/Palindrome" alt="Wikipedia palindromes article">here</a>.
+        </div>
+    </div>
 
-    </script>
 </body>
 </html>

@@ -1,7 +1,22 @@
 const isPalindrome = function() {
     // store input as a variable
     let input = document.getElementById("submitted-text").value;
-    // console.log(input);
+    input = input.toLowerCase();
+
+    // convert numbers to a string
+    input += "";
+
+    //replacing special characters and spaces -- this returns an empty value as the input for some reason
+
+    // input = input.replace(/\s/g, "");
+    // input = input.replace(/./g, "");
+    // input = input.replace(/'/g, "");
+    // input = input.replace(/!/g, "");
+    // input = input.replace(/,/g, "");
+
+    // create li to add the input to one of the lists
+    let node = document.createElement("LI");
+    node.innerHTML = input;
 
     // initialize variable for reverse input
     let reverseInput = "";
@@ -12,16 +27,13 @@ const isPalindrome = function() {
     }
 
     // compare the variables (input vs new)
-    if (input === reverseInput) {
-        // return true and edit HTML so it is on the true list
-        let item1 = document.createElement("LI");
-        item1.innerHTML = input;
-        document.getElementById("palindrome-list").appendChild(item1);
+    if (input == reverseInput) {
+        // return true and append to true list
+        document.getElementById("palindrome-list").appendChild(node);
         return true;
     } else {
-        // return false and edit HTML so it is on the false list
-        let item2 = document.createElement("LI");
-        item2.innerHTML = input;
-        document.getElementById("not-palindrome-list").appendChild(item2);
+        // return false and append to false list
+        document.getElementById("not-palindrome-list").appendChild(node);
+        return false;
     }
 }

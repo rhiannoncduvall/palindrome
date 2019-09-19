@@ -1,9 +1,97 @@
 body {
     background: goldenrod;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+
 }
 
 button {
     color: white;
-    border: 1px solid black;
-    background-color: grey;
+    border: 5px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: goldenrod;
+}
+
+/* main container */
+.wrapper {
+    border:5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow:0 0 50px  rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.2);
+
+    padding: 10px;
+    height: 83vh;
+    max-width:540px;
+    margin: 5vh auto 5vh auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.lists {
+    flex: 1 1 50%;
+
+    display: flex;
+
+    overflow-y: scroll;
+
+    line-height: 1.4;
+
+}
+
+
+.list1 {
+    padding: 20px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid white;
+    border-radius: 10px;
+
+    margin-right: 2.5vh;
+
+    flex: 1 1 30%;
+
+    overflow-y: scroll;
+}
+
+.list2 {
+    padding: 20px;
+    background: rgba(255,255,255,0.3);
+    margin-left: 2.5vh;
+
+    flex: 1 1 30%;
+
+    overflow-y: scroll;
+}
+
+.list-name {
+    text-align: center;
+    flex: 1 0 auto;
+    margin: 0 auto 0 auto;
+}
+
+.lists ul {
+    flex: 1 0 auto;
+    overflow-y: scroll;
+
+}
+
+.title-text {
+    text-align: center;
+    margin: 1vh auto auto auto;
+}
+
+.main-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    margin: 1vh auto auto auto;
+    align-self: center;
 }
