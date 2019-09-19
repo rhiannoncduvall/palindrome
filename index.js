@@ -37,3 +37,6 @@ const isPalindrome = function() {
         return false;
     }
 }
+
+
+// if nothing is input in form, empty item shows up on Palindromes list
