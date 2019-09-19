@@ -3,9 +3,6 @@ const isPalindrome = function() {
     let userInput = document.getElementById("submitted-text").value;
     let input = userInput.toLowerCase();
 
-    // convert numbers to a string
-    input += "";
-
     //replacing special characters and spaces -- this returns an empty value as the input for some reason
 
     // input = input.replace(/\s/g, "");
