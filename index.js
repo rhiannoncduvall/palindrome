@@ -1,7 +1,7 @@
 const isPalindrome = function() {
     // store input as a variable
-    let input = document.getElementById("submitted-text").value;
-    input = input.toLowerCase();
+    let userInput = document.getElementById("submitted-text").value;
+    let input = userInput.toLowerCase();
 
     // convert numbers to a string
     input += "";
@@ -16,7 +16,7 @@ const isPalindrome = function() {
 
     // create li to add the input to one of the lists
     let node = document.createElement("LI");
-    node.innerHTML = input;
+    node.innerHTML = userInput;
 
     // initialize variable for reverse input
     let reverseInput = "";

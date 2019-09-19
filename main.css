@@ -1,21 +1,63 @@
 body {
     background: goldenrod;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: rgba(0,0,0,0.9)
+}
+
+a:link, a:visited {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: goldenrod;
 }
 
 h1 {
-    color: white;
+    color: rgba(255, 255, 255, 0.925);
+    text-shadow: 2px 2px rgba(0,0,0,0.2), 4px 4px rgba(0,0,0,0.1);
+    font-family: 'Merriweather', helvetica, serif;
+    font-size: 3em;
 }
 
 h2 {
+    color: rgba(0,0,0,0.7)
+}
 
+#definition {
+    font-size: .8em;
+    color:  rgba(0,0,0,0.9)
+
+}
+
+#submitted-text {
+    background-color: goldenrod;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px;
+    width: 200px;
+    font-size: 1em;
 }
 
 button {
     color: white;
-    border: 5px solid rgba(0,0,0,0.3);
-    border-radius: 10px;
     background-color: goldenrod;
+    border: 0px;
+    padding: 7px 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    font-size: 1em;
+
+}
+
+button:hover {
+    box-shadow:0 0 2px rgba(0,0,0,0.3);
 }
 
 /* main container */
@@ -27,11 +69,12 @@ button {
 
     padding: 10px;
     height: 83vh;
-    max-width:540px;
+    max-width:600px;
     margin: 5vh auto 5vh auto;
 
     display: flex;
     flex-direction: column;
+    justify-items: stretch;
 }
 
 div.lists {
@@ -49,10 +92,9 @@ div.lists {
 .list1 {
     padding: 20px;
     background: rgba(255,255,255,0.3);
-    border: 1px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-
-    margin-right: 2.5vh;
+    margin: 0 1.5vh;
 
     flex: 1 1 30%;
 
@@ -62,7 +104,9 @@ div.lists {
 .list2 {
     padding: 20px;
     background: rgba(255,255,255,0.3);
-    margin-left: 2.5vh;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 0 1.5vh;
 
     flex: 1 1 30%;
 
@@ -83,12 +127,14 @@ div.lists {
 
 .title-text {
     text-align: center;
-    margin: 1vh auto auto auto;
+    margin: 0;
+
 }
 
 .main-form {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    line-height: 1.6;
 }
 
 .footer {
